@@ -1,0 +1,326 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Header Logos -  */
+header {
+    position: relative;  
+}
+
+.header-logo {
+    position: absolute;
+    top: 5px;           
+    height: 125px;       
+    width: 125px;        
+    object-fit: cover;  
+    border-radius: 5px;  
+}
+
+.left-logo {
+    left: 5px;          
+}
+
+.right-logo {
+    right: 5px;         
+}
+
+header h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0 0 15px 0;
+}
+
+/* Navigation Links */
+header nav a {
+    color: white;
+    margin: 0 10px;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: #2e7d32;
+}
+
+h2, h3 {
+    color: #1b5e20;
+}
+
+/* Park Section Styles */
+.park-section {
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 20px;
+    border-left: 8px solid #2e7d32;
+}
+
+.park-section h2 {
+    margin-top: 0;
+}
+
+.park-section ul {
+    margin-left: 20px;
+}
+
+/* Slideshow Styles */
+.slideshow {
+    width: 320px;
+    height: 220px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.slide {
+    width: 320px;
+    display: none;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Vertical Gallery - Large Images */
+.vertical-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 40px;              
+    margin: 20px 0;
+}
+
+.vertical-img {
+    width: 80%;             
+    max-width: 1200px;      
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.vertical-img:hover {
+    transform: scale(1.02); 
+}
+
+/* Park History Section */
+.park-history {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 30px auto;
+    border-left: 8px solid #2e7d32;
+    max-width: 900px;
+}
+
+.park-history h2 {
+    color: #1b5e20;
+    margin-top: 0;
+}
+
+.park-history ul {
+    margin-left: 25px;
+    list-style-type: square;
+}
+
+/* Contact Page Styles */
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;     
+    padding: 30px 20px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-left: 8px solid #2e7d32;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+/* Explore Section */
+.explore-section, .bottom-text {
+    text-align: center;          /* Center text */
+    font-size: 1.3em;            /* Slightly larger text */
+    margin: 40px auto;           /* Spacing from other content */
+    max-width: 900px;            /* Keep text contained */
+    position: relative;          
+}
+
+/* Green Dividing Line Below Explore Section */
+.explore-section::after {
+    content: "";                  
+    display: block;
+    width: 50%;                   
+    height: 4px;                  
+    background-color: #2e7d32;    
+    margin: 20px auto 0 auto;     
+    border-radius: 2px;
+}
+
+/* Green Dividing Line Above Bottom Text */
+.bottom-text::before {
+    content: "";
+    display: block;
+    width: 50%;                   
+    height: 4px;                  
+    background-color: #2e7d32;    
+    margin: 0 auto 20px auto;     
+    border-radius: 2px;
+}
+/* Park Section Header and Text */
+.park-section h2 {
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.park-section p, .park-section ul {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 50%;          /* 50% of page width */
+    max-width: 800px;    
+    margin: 0 auto 50px auto;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.4); /* slightly opaque */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+/* Arrows on slideshow */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.3); /* semi-transparent at rest */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    user-select: none;
+    opacity: 0;           /* start hidden */
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next {
+    opacity: 0.8;         /* more visible on hover */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7); /* darker on hover */
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

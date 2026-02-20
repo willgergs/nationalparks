@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>National Parks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+<body>
+
+<header>
+    <img src="images/Rangers1.jpg" alt="Parks Rangers Logo" class="header-logo left-logo">
+    <img src="images/NPARKS1.png" alt="National Parks Association Logo" class="header-logo right-logo">
+    <h1>National Parks</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="parks.html">Parks</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Yellowstone Section -->
+    <section class="park-section">
+        <h2>Yellowstone National Park</h2>
+        <p>Yellowstone, established in 1872, was the first national park in the United States.</p>
+        <ul>
+            <li>Geysers, hot springs, and mud pots</li>
+            <li>Wildlife including bison, bears, and wolves</li>
+            <li>Grand Canyon of Yellowstone and Yellowstone Lake</li>
+        </ul>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container" id="yellowstone-slideshow">
+            <div class="slide">
+                <img src="images/yellowstone1.jpg" alt="Yellowstone 1">
+                <a class="prev" onclick="plusSlide('yellowstone-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('yellowstone-slideshow', 1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="images/yellowstone2.jpg" alt="Yellowstone 2">
+                <a class="prev" onclick="plusSlide('yellowstone-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('yellowstone-slideshow', 1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="images/yellowstone3.jpg" alt="Yellowstone 3">
+                <a class="prev" onclick="plusSlide('yellowstone-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('yellowstone-slideshow', 1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yosemite Section -->
+    <section class="park-section">
+        <h2>Yosemite National Park</h2>
+        <p>Yosemite was designated a national park in 1890 and is famous for its giant sequoias and cliffs.</p>
+        <ul>
+            <li>El Capitan and Half Dome</li>
+            <li>Yosemite Valley waterfalls</li>
+            <li>Sequoia groves and diverse wildlife</li>
+        </ul>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container" id="yosemite-slideshow">
+            <div class="slide">
+                <img src="images/yosemite1.jpg" alt="Yosemite 1">
+                <a class="prev" onclick="plusSlide('yosemite-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('yosemite-slideshow', 1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="images/yosemite2.jpeg" alt="Yosemite 2">
+                <a class="prev" onclick="plusSlide('yosemite-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('yosemite-slideshow', 1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="images/yosemite3.jpg" alt="Yosemite 3">
+                <a class="prev" onclick="plusSlide('yosemite-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('yosemite-slideshow', 1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grand Canyon Section -->
+    <section class="park-section">
+        <h2>Grand Canyon National Park</h2>
+        <p>Grand Canyon, established in 1919, is known for its immense size and colorful landscape.</p>
+        <ul>
+            <li>Colorado River and rafting</li>
+            <li>Scenic viewpoints along the rim</li>
+            <li>Hiking and desert wildlife</li>
+        </ul>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container" id="grandcanyon-slideshow">
+            <div class="slide">
+                <img src="images/grandcanyon1.jpeg" alt="Grand Canyon 1">
+                <a class="prev" onclick="plusSlide('grandcanyon-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('grandcanyon-slideshow', 1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="images/grandcanyon2.jpg" alt="Grand Canyon 2">
+                <a class="prev" onclick="plusSlide('grandcanyon-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('grandcanyon-slideshow', 1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="images/grandcanyon3.jpg" alt="Grand Canyon 3">
+                <a class="prev" onclick="plusSlide('grandcanyon-slideshow', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlide('grandcanyon-slideshow', 1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Email: info@nationalparks.com | Phone: 555-123-4567</p>
+</footer>
+
+<script src="parks.js"></script>
+</body>
+</html>
